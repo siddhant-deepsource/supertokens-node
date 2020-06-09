@@ -149,7 +149,7 @@ app.get("/testHeader", async (req, res) => {
 app.get("/checkDeviceInfo", (req, res) => {
     let sdkName = req.headers["supertokens-sdk-name"];
     let sdkVersion = req.headers["supertokens-sdk-version"];
-    res.send(sdkName === "website" && sdkVersion === "4.1.4" ? true : false);
+    res.send(sdkName === "website" && typeof sdkVersion === "string" ? true : false);
 });
 
 app.post("/checkAllowCredentials", (req, res) => {
