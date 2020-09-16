@@ -9,7 +9,7 @@ name = "javascript"
 enabled = true
 
   [analyzers.meta]
-  module_system = "es-modules"
+  module_system = "commonjs"
   environment = [
     "nodejs",
     "mocha"
